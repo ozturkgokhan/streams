@@ -4,12 +4,11 @@ import { fetchStream } from '../../actions';
 
 class StreamEdit extends React.Component {
   componentDidMount(){
-    if (!this.props.stream){
-      this.props.fetchStream(this.props.match.params.id);
-    }
-    
-    
+    // if (!this.props.stream){
+    //   this.props.fetchStream(this.props.match.params.id);
+    // }
 
+    this.props.fetchStream(this.props.match.params.id);
   }
 
   render(){
